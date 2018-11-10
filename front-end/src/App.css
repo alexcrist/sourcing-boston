@@ -1,0 +1,35 @@
+.zip-label {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.zipcode {
+    width:20%;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-cont {
+    display:flex;
+}
+
+.home-container .zipform {
+    margin-bottom: 0px;
+}
+
+.zip-sub {
+    height: calc(2.25rem + 2px);
+    align-self: flex-end;
+}
+
+.home {
+    background-image: url('./res/aubergines-bio-cabbage-5205.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
