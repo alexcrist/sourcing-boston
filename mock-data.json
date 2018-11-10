@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2018-12-25",
+    "day": "Tuesday",
+    "sources": [
+      {
+        "name": "Allston-Brighton APAC",
+        "type": "Food pantry",
+        "address": "406 Cambridge St, Allston, MA 02134",
+        "phone": "(617) 783-1485",
+        "hours": ['10:00am', '2:00pm']
+        "disabilityAccessible": false
+      }
+    ]
+  }
+]
