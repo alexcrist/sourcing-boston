@@ -1,4 +1,7 @@
-const express = requre('express');
+const express = require('express');
+const chalk = require('chalk');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 const cors = require('cors');
 const router = require('./router');
 
@@ -7,15 +10,15 @@ const PORT = process.env.PORT || 5000;
 // Initialize application
 const app = express();
 app.set('port', PORT);
-app.use(cors);
+app.use(cors());
 app.use(bodyParser.json());
 app.use(router);
 app.listen(app.get('port'), () => {
-  console.log('Starting back-end on port ' + PORT);
+  console.log(chalk.cyan('Starting application on port ') + PORT + chalk.cyan('.'));
 });
 
 // Connect to MongoDB
 const mongoUri = process.env.MONGODB_URI;
-console.log('Connecting to MongoDB at ' + mongoUri);
-mongoose.connect(mongoUri);
+console.log(chalk.cyan('Connecting to MongoDB at ') + mongoUri + chalk.cyan('.'));
+mongoose.connect(mongoUri, { useNewUrlParser: true });
 
