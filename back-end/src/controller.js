@@ -6,7 +6,20 @@ const controller = {
 };
 
 function schedule(req, res) {
-  res.sendStatus(200);
+  distance.get(
+    {
+      origin: 'San Francisco, CA',
+      destination: 'San Diego, CA'
+    },
+    function(err, data) {
+      if (err){
+        console.error(err);
+        res.status(500).send(err);
+      } else {
+        console.log(data);
+        res.status(200).send(data);
+      }
+  });
 }
 
 function addSource(req, res) {
