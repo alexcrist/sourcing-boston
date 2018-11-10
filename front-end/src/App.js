@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Map from "./components/map/MapComponent";
+import MapComponent from "./components/map/MapComponent";
 
 class App extends Component {
 
@@ -35,11 +35,11 @@ class App extends Component {
         </div>
       </div> 
       :
-      <Map>
+      <MapComponent>
 
 
        
-      </Map>
+      </MapComponent>
     );
   }
 }

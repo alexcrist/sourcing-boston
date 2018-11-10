@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { ReactLeaflet } from '../../../node_modules/react-leaflet/src';
-
-const { Map, TileLayer, Marker, Popup } = ReactLeaflet
+import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 
 class MapComponent extends Component {
 
