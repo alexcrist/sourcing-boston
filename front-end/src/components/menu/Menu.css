@@ -1,0 +1,11 @@
+.food-nav {
+    background-color: #63bd45;
+}
+
+html body .food-link {
+    color: white !important;
+}
+
+.navbar-nav {
+    float:right;
+}
