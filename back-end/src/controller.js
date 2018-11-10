@@ -1,21 +1,34 @@
-const model = require('./Model');
+const Source = require('./Source');
 
 const controller = {
-  getSomething,
-  postSomething,
-  deleteSomething
+  schedule,
+  addSource
 };
 
-function getSomething(req, res) {
+function schedule(req, res) {
   res.sendStatus(200);
 }
 
-function postSomething(req, res) {
-  res.sendStatus(200);
-}
+function addSource(req, res) {
+  const body = req.body;
+  const {
+    username,
+    password,
+    source
+  } = body;
 
-function deleteSomething(req, res) {
-  res.sendStatus(200);
+  const user = username === process.env.MONGODB_USER;
+  const pass = password === process.env.MONGODB_PASS;
+  if (!(user && pass)) {
+    res.sendStatus(403);
+  } else {
+    Source.create(source)
+      .then(() => res.sendStatus(200))
+      .catch(err => {
+        console.error(err);
+        res.status(500).send(err);
+      });
+  }
 }
 
 module.exports = controller;

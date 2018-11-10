@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const model = mongoose.model('Model', new mongoose.Schema({
+const model = mongoose.model('Source', new mongoose.Schema({
   key: String
 }));
 
