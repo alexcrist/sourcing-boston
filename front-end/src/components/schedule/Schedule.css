@@ -1,0 +1,16 @@
+.schedule-link {
+    color: white !important;
+    margin: 0px auto;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    line-height: inherit;
+}
+
+.row {
+    min-height: 200px;
+}
+
+.row h4 {
+    padding: 10px;
+    background-color: #63bd45;
+}

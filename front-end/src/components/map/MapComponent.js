@@ -3,6 +3,15 @@ import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 
 class MapComponent extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            zoom: 13,
+            lat: 51,
+            lng: 0,
+        }
+    }
+
     render() {
         const position = [this.state.lat, this.state.lng]
         return (
