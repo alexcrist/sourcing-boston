@@ -1,22 +1,48 @@
 import React, { Component } from 'react';
 import './App.css';
+import Map from "./components/map/MapComponent";
 
 class App extends Component {
+
+  constructor(props) {
+      super(props);
+      this.state = {
+          zip: '',
+          submitted: false
+      }
+  }
+
+  handleChange = (e) => {
+    this.setState({zip: e.target.value});
+  }
+
+  onSubmit = () => {
+    this.setState({submitted: true});
+  }
+
   render() {
     return (
-      <div className="home">
+      !this.state.submitted ? 
+        <div className="home">
         <div className="container home-container">
           <div className="form-cont">
             <div className="zip-form">
               <label className="zip-label" for="zipcode">Enter Your Zip Code</label>
-              <input type="text" placeholder="zipcode" class="form-control" id="zipcode"></input>
+              <input onChange={this.handleChange} type="text" placeholder="zipcode" class="form-control" id="zipcode"></input>
             </div>
-            <button className="btn btn-primary zip-sub">Submit</button>
+            <button onClick={this.onSubmit} className="btn btn-primary zip-sub">Submit</button>
           </div>
         </div>
-      </div>
+      </div> 
+      :
+      <Map>
+
+
+       
+      </Map>
     );
   }
 }
 
 export default App;
+
