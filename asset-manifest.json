@@ -1,7 +1,7 @@
 {
   "main.css": "/sourcing-boston/static/css/main.cd6cd727.chunk.css",
-  "main.js": "/sourcing-boston/static/js/main.92db58a0.chunk.js",
-  "main.js.map": "/sourcing-boston/static/js/main.92db58a0.chunk.js.map",
+  "main.js": "/sourcing-boston/static/js/main.9e8b2ac5.chunk.js",
+  "main.js.map": "/sourcing-boston/static/js/main.9e8b2ac5.chunk.js.map",
   "static/css/1.d5d8b68b.chunk.css": "/sourcing-boston/static/css/1.d5d8b68b.chunk.css",
   "static/js/1.3891276e.chunk.js": "/sourcing-boston/static/js/1.3891276e.chunk.js",
   "static/js/1.3891276e.chunk.js.map": "/sourcing-boston/static/js/1.3891276e.chunk.js.map",
@@ -12,6 +12,6 @@
   "static/media/App.css": "/sourcing-boston/static/media/aubergines-bio-cabbage-5205.ff454842.jpg",
   "static/css/1.d5d8b68b.chunk.css.map": "/sourcing-boston/static/css/1.d5d8b68b.chunk.css.map",
   "index.html": "/sourcing-boston/index.html",
-  "precache-manifest.c5e21003447a76db78dea9721dc12c07.js": "/sourcing-boston/precache-manifest.c5e21003447a76db78dea9721dc12c07.js",
+  "precache-manifest.06ab1a598c2357d1cfa47eb1ed222444.js": "/sourcing-boston/precache-manifest.06ab1a598c2357d1cfa47eb1ed222444.js",
   "service-worker.js": "/sourcing-boston/service-worker.js"
 }
