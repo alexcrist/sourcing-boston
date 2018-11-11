@@ -43,6 +43,7 @@ class Schedule extends Component {
                     </div>
                     <div class="row">
                         {second}
+                        <div className="col"></div>
                     </div>
                 </div>    
             </div>    
