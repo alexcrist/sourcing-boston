@@ -14,7 +14,6 @@ food_banks = {
 }
 
 x = re.split("HELLO", string)
-print(len(x))
 
 fp = re.split("FOOD PANTRIES", x[0])[1]
 food_banks["FOOD PANTRIES"] = re.split('\d+\.', fp)

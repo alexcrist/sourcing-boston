@@ -52,12 +52,13 @@ function groupIntoDays(dbZipcode) {
 
   let days = [];
   for (let i = 0; i < 7; i++) {
-    const date = today.add(i, 'day');
+    let date = today
 
     const sourceHappensOnDate = source => {
-      // THIS IS HARD
-      // TODO
-      // RETURNS A BOOLEAN
+      let day = moment(date).format('ddd').toLowerCase()
+      if (source['source']['availability'][day.toString()] === undefined) {
+        return false;
+      }
       return true;
     };
 
@@ -66,6 +67,8 @@ function groupIntoDays(dbZipcode) {
       date: moment(date).format('YYYY-MM-DD'),
       sources: sources.filter(sourceHappensOnDate)
     });
+
+    date = today.add(1, 'days');
   }
   return days;
 }
@@ -74,7 +77,42 @@ function filterOverlaps(days) {
   // TODO
   // THIS FUNCTION NEEDS TO
   //   FOR EVERY SOURCE THAT OVERLAPS ANOTHER SOURCES TIME WINDOW
-  //     REMOVE THE FURTHER OF THE TWO
+  //     REMOVE THE FURTHER OF THE 
+  days.map((day) => {
+      day.sources.map(s => {
+        console.log(day.day, s.source.availability)
+      })
+  })
+
+
+  // for (let i = 0; i < 7; i++) {
+  //   let d = days[i];
+  //   let filtSource = [];
+  //   for (let j = 0; j < d.sources.length; j++) {
+  //     let s = d.sources[j];
+  //     let overlap = false;
+  //     for (let k = 0; k < d.sources.length; k++) {
+  //       let start1 = s.source.availability[d.day.toLowerCase()][0].match(/\d\d/);
+  //       let end1 = s.source.availability[d.day.toLowerCase()][1].match(/\d\d/);
+  //       let start2 = d.source[k].source.availability[d.day.toLowerCase()][0].match(/\d\d/);
+  //       let end2 = d.source[k].source.availability[d.day.toLowerCase()][1].match(/\d\d/);
+  //       if (end1 > start2 || end2 > start1) {
+  //         overlap = true;
+  //       }
+  //       if (s !== d.source[k] && overlap) {
+  //         if (s.distance < d.source[k].distance) {
+  //           k++;
+  //           filtSource.append(s);
+  //         }
+  //         else {
+  //           filtSource.append(d.source[k]);
+  //           break;
+  //         }
+  //       }
+  //     }
+  //   }
+  //   days[i].sources = filtSource;
+  // }
   return days;
 }
 
@@ -122,7 +160,7 @@ function schedule(req, res) {
     .then(filterOverlaps)
     .then(filterExtra)
     .then(data => {
-      console.log(data);
+      // console.log(data);
       res.status(200).send(data)
     })
     .catch(err => {
