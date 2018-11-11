@@ -82,8 +82,6 @@ function overlap(day, source1, source2) {
 }
 
 function filterSources(day, sources) {
-  console.log('filter sources');
-  console.log(!sources);
   if (!sources) {
     return sources;
   }
