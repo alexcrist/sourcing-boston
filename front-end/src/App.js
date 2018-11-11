@@ -22,13 +22,7 @@ class App extends Component {
   }
 
   onSubmit = () => {
-    this.scheduleService.getSchedule(this.state.zip)
-      .then((res => {
-        this.setState({
-            food: res
-          }, this.setState({submitted: true})
-        )
-      }))
+    this.setState({submitted: true})
   }
 
   render() {
