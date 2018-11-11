@@ -1,7 +1,23 @@
 const mongoose = require('mongoose');
 
-const model = mongoose.model('Source', new mongoose.Schema({
-  key: String
-}));
+const sourceSchema = new mongoose.Schema({
+  name: String,
+  address: String,
+  phone: String,
+  availability: {
+    mon: [String],
+    tues: [String],
+    wed: [String],
+    thurs: [String],
+    fri: [String],
+    sat: [String],
+    sun: [String]
+  },
+  type: String,
+  latitude: Number,
+  longitude: Number
+});
 
-module.exports = model;
+const Source = mongoose.model('Source', sourceSchema);
+
+module.exports = { sourceSchema, Source };

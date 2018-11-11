@@ -9,4 +9,7 @@ router.route('/schedule')
 router.route('/source')
   .post(controller.addSource);
 
+router.route('/zipcode')
+  .delete(controller.deleteAllZipcodes);
+
 module.exports = router;
