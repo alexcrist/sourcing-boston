@@ -1,5 +1,8 @@
-.food-nav {
+html body .food-nav {
     background-color: #63bd45;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 html body .food-link {
@@ -7,5 +10,5 @@ html body .food-link {
 }
 
 .navbar-nav {
-    float:right;
+    margin-left:auto;
 }

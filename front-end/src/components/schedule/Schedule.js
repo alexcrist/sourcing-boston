@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Header from '../header/Header';
 import Day from "../day/Day";
 import MapComponent from "../map/MapComponent";
 import "./Schedule.css";
@@ -114,10 +113,9 @@ class Schedule extends Component {
     render() {
         return (
             <div>
-                <Header/>
-                <nav className="navbar navbar-expand-lg navbar-light food-nav">
+                <div>
                     <h2 className="schedule-link">Food Schdeule</h2>
-                </nav>
+                </div>
                 <div className="container">
                     <div class="row">
                         <div class="col-sm">

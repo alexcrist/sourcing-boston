@@ -14,10 +14,10 @@ class ScheduleService {
         return this[_singleton]
     }
 
-    getSchedule() {
+    getSchedule(zipcode) {
         return fetch(URL, {
                 method: "post",
-                body: JSON.stringify(course),
+                body: JSON.stringify(zipcode),
                 headers: {
                     'content-type': 'application/json'
                 }
@@ -25,26 +25,6 @@ class ScheduleService {
             .then((res) => {
                 return res.json();
             })
-    }
-
-    findAllCourses() {
-        return fetch(URL)
-        .then((response) => {
-            return response.json();
-        })
-    }
-
-    updateCourse(courseId, course) {
-        return fetch(URL + "/" + courseId, {
-            method: "put",
-            body: JSON.stringify(course),
-            headers: {
-                'content-type': 'application/json'
-            }
-        })
-        .then(function (response) {
-            return response.json();
-        })
     }
 }
 

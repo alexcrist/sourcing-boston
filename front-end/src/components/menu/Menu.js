@@ -6,6 +6,7 @@ class Menu extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-light food-nav">
+                <a><img src="../../res/logo.png"/></a>
                 <a className="navbar-brand food-link" href="#">Time 4 Food</a>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">

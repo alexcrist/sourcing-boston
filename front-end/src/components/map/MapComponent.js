@@ -8,7 +8,7 @@ class MapComponent extends Component {
         this.state = {
             zoom: 13,
             lat: 51,
-            lng: 0,
+            lng: -0.09,
         }
     }
 

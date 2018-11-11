@@ -3,6 +3,7 @@ import './App.css';
 import MapComponent from "./components/map/MapComponent";
 import Menu from "./components/menu/Menu";
 import Schedule from "./components/schedule/Schedule";
+import scheduleService from "./services/schedule.service";
 
 class App extends Component {
 
@@ -10,8 +11,10 @@ class App extends Component {
       super(props);
       this.state = {
           zip: '',
-          submitted: false
+          submitted: false,
+          food: [],
       }
+      this.scheduleService = scheduleService.instance
   }
 
   handleChange = (e) => {
@@ -19,7 +22,13 @@ class App extends Component {
   }
 
   onSubmit = () => {
-    this.setState({submitted: true});
+    this.scheduleService.getSchedule(this.state.zip)
+      .then((res => {
+        this.setState({
+            food: res
+          }, this.setState({submitted: true})
+        )
+      }))
   }
 
   render() {
@@ -33,14 +42,14 @@ class App extends Component {
                 <div className="form-cont">
                   <div className="zip-form">
                     <label className="zip-label" for="zipcode">Build a Food Schedule</label>
-                    <input onChange={this.handleChange} type="text" placeholder="zipcode" className="form-control form-control-lg" id="zipcode"></input>
+                    <input onChange={this.handleChange} type="text" placeholder="Enter your zipcode..." className="form-control form-control-lg" id="zipcode"></input>
                   </div>
                   <button onClick={this.onSubmit} className="btn btn-primary btn-lg zip-sub">Submit</button>
                 </div>
               </div>
             </div> 
           :
-          <Schedule/>
+          <Schedule food={this.state.food}/>
         }
       </div>
     );

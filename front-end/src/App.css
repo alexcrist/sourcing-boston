@@ -26,8 +26,11 @@
     margin-bottom: 0px;
 }
 
-.zip-sub {
+html body .zip-sub {
     align-self: flex-end;
+    background-color: #63bd45;
+    border-color: #63bd45;
+    box-shadow: 2px 2px grey;
 }
 
 .home {
