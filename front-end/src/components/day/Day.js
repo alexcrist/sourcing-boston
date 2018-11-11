@@ -9,8 +9,8 @@ class Day extends Component {
     render() {
         let { day, date, sources } = this.props.day
         return (
-            <div className="card">
-                <div clasName="card-body" style={{padding: "10px", backgroundColor: "#f7f7f9", boxShadow: "5px 10px grey"}}>
+            <div className="card" style={{marginBottom: "10px"}}>
+                <div clasName="card-body" style={{padding: "10px", backgroundColor: "#f7f7f9"}}>
                     <div>
                         <h4>{day} | {date}</h4>
                         {console.log(sources)}
