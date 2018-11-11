@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/sourcing-boston/precache-manifest.e6c0a6f8ad67b535535240760e5a0757.js"
+  "/sourcing-boston/precache-manifest.c5e21003447a76db78dea9721dc12c07.js"
 );
 
 workbox.clientsClaim();
