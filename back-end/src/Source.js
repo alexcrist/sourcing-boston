@@ -6,9 +6,9 @@ const sourceSchema = new mongoose.Schema({
   phone: String,
   availability: {
     mon: [String],
-    tues: [String],
+    tue: [String],
     wed: [String],
-    thurs: [String],
+    thu: [String],
     fri: [String],
     sat: [String],
     sun: [String]

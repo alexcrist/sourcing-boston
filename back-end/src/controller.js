@@ -82,7 +82,6 @@ function overlap(day, source1, source2) {
   const end1 = convert(source1.source.availability[day][1]);
   const start2 = convert(source2.source.availability[day][0]);
   const end2 = convert(source2.source.availability[day][1]);
-  console.log(start1, end1, start2, end2);
   return (end1 > start2 && start1 < end2) || (end2 > start1 && start2 < end1);
 }
 
@@ -98,9 +97,6 @@ function filterSources(day, sources) {
       const source1 = sources[i];
       const source2 = sources[j];
       if (overlap(day, source1, source2)) {
-        console.log('overlap!');
-        console.log(day);
-        console.log(source2);
         let index = source1.distance < source2.distance ? j : i;
         sources.splice(index, 1);
         return filterSources(sources);
@@ -120,7 +116,6 @@ function filterOverlaps(days) {
       sources: filteredSources
     });
   });
-  console.log('filtered', filteredDays);
   return filteredDays;
 }
 
