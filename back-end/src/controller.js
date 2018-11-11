@@ -3,6 +3,7 @@ const { Zipcode } = require('./Zipcode');
 const { distance, geocode } = require('./map');
 const Promise = require('bluebird');
 const moment = require('moment');
+const _ = require('lodash');
 
 const controller = {
   schedule,
@@ -50,18 +51,15 @@ function calculateZipcode(zipcode) {
 
 function groupIntoDays(dbZipcode) {
   const { sources } = dbZipcode;
-  const today = moment();
+  let date = moment();
 
   let days = [];
   for (let i = 0; i < 7; i++) {
-    let date = today
 
     const sourceHappensOnDate = source => {
-      let day = moment(date).format('ddd').toLowerCase()
-      if (source['source']['availability'][day.toString()] === undefined) {
-        return false;
-      }
-      return true;
+      const day = moment(date).format('ddd').toLowerCase();
+      const sources = source['source']['availability'][day];
+      return sources && sources.length !== 0;
     };
 
     days.push({
@@ -70,58 +68,52 @@ function groupIntoDays(dbZipcode) {
       sources: sources.filter(sourceHappensOnDate)
     });
 
-    date = today.add(1, 'days');
+    date.add(1, 'days');
   }
   return days;
 }
 
+function overlap(day, source1, source2) {
+  const start1 = source1.source.availability[day][0];
+  const end1 = source1.source.availability[day][1];
+  const start2 = source2.source.availability[day][0];
+  const end2 = source2.source.availability[day][1];
+  return end1 > start2 || end2 > start1;
+}
+
+function filterSources(day, sources) {
+  if (!sources) {
+    return sources;
+  }
+  for (let i = 0; i < sources.ss; i++) {
+    for (let j = i + 1; j < sources.length; j++) {
+      const source1 = sources[i];
+      const source2 = sources[j];
+      if (overlap(day, source1, source2)) {
+        let index = source1.distance < source2.distance ? j : i;
+        _.remove(sources, index)
+        return filterSources(sources);
+      }
+    }
+  }
+  return sources;
+}
+
 function filterOverlaps(days) {
-  // TODO
-  // THIS FUNCTION NEEDS TO
-  //   FOR EVERY SOURCE THAT OVERLAPS ANOTHER SOURCES TIME WINDOW
-  //     REMOVE THE FURTHER OF THE 
-  days.map((day) => {
-      day.sources.map(s => {
-        console.log(day.day, s.source.availability)
-      })
-  })
-
-
-  // for (let i = 0; i < 7; i++) {
-  //   let d = days[i];
-  //   let filtSource = [];
-  //   for (let j = 0; j < d.sources.length; j++) {
-  //     let s = d.sources[j];
-  //     let overlap = false;
-  //     for (let k = 0; k < d.sources.length; k++) {
-  //       let start1 = s.source.availability[d.day.toLowerCase()][0].match(/\d\d/);
-  //       let end1 = s.source.availability[d.day.toLowerCase()][1].match(/\d\d/);
-  //       let start2 = d.source[k].source.availability[d.day.toLowerCase()][0].match(/\d\d/);
-  //       let end2 = d.source[k].source.availability[d.day.toLowerCase()][1].match(/\d\d/);
-  //       if (end1 > start2 || end2 > start1) {
-  //         overlap = true;
-  //       }
-  //       if (s !== d.source[k] && overlap) {
-  //         if (s.distance < d.source[k].distance) {
-  //           k++;
-  //           filtSource.append(s);
-  //         }
-  //         else {
-  //           filtSource.append(d.source[k]);
-  //           break;
-  //         }
-  //       }
-  //     }
-  //   }
-  //   days[i].sources = filtSource;
-  // }
-  return days;
+  let filteredDays = [];
+  days.forEach(day => {
+    filteredSources = filterSources(day.day.toLowerCase(), day.sources);
+    filteredDays.push({
+      day: day.day,
+      date: day.date,
+      sources: filteredSources
+    });
+  });
+  return filteredDays;
 }
 
 function filterExtra(days) {
-  // TODO
-  // THIS FUNCTION WILL REMOVE SOURCES IF THERE ARE MORE THAN THREE ON A DAY
-  // THIS IS SO WE DON'T OVERWHELM PEOPLE
+  // TODO - should filter to be three
   return days;
 }
 
@@ -162,7 +154,7 @@ function schedule(req, res) {
     .then(filterOverlaps)
     .then(filterExtra)
     .then(data => {
-      // console.log(data);
+      console.log(data);
       res.status(200).send(data)
     })
     .catch(err => {
@@ -183,7 +175,6 @@ function addSource(req, res) {
   const pass = password === process.env.MONGODB_PASS;
 
   if (user && pass) {
-    console.log(source);
     Source.create(source)
       .then(() => res.sendStatus(200))
       .catch(err => {
