@@ -10,17 +10,19 @@ class Day extends Component {
         let { day, date, sources } = this.props.day
         return (
             <div>
-                <h4>{day}</h4>
-                <h4>{date}</h4>
-                {sources.forEach(source => {
-                    let { name, category, address, phone, availability } = source;
+                <h4>{day} | {date}</h4>
+                {sources.map(source => {
+                    let { name, address, phone, availability, type } = source.source;
+                    console.log(name, address, phone, availability, type)
+
+                    console.log()
                     return (
                         <div>
-                            <b><h5>{name}</h5></b>
-                            <h5>{category}</h5>
-                            <h5>{address}</h5>
-                            <h5>{phone}</h5>
-                            <h5>{availability}</h5>
+                            <b><p>{name}</p></b>
+                            <p>{type}</p>
+                            <p>{address}</p>
+                            <p>{phone}</p>
+                            <p>Today's Hours: {availability[day.toLowerCase()].join("-")}</p>
                         </div>
                     );
                 })}

@@ -30,7 +30,7 @@ class App extends Component {
       <div>
         <Menu/>
         {
-          !this.state.submitted ? 
+          !this.state.submitted ?
             <div className="home">
               <div className="container home-container">
                 <div className="form-cont">
@@ -41,7 +41,7 @@ class App extends Component {
                   <button onClick={this.onSubmit} className="btn btn-primary btn-lg zip-sub">Submit</button>
                 </div>
               </div>
-            </div> 
+            </div>
           :
           <Schedule zip={this.state.zip}/>
         }

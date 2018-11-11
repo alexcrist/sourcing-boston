@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Day from "../day/Day";
-import MapComponent from "../map/MapComponent";
 import "./Schedule.css";
 import scheduleService from '../../services/schedule.service'; 
 
@@ -17,12 +16,7 @@ class Schedule extends Component {
         scheduleService.getSchedule(this.props.zip)
         .then(data => data.json())
         .then(data => {
-            this.setState({ days: data }, () => {
-                console.log('state');
-                console.log(this.state);
-            });
-            console.log('it is done');
-            console.log(data);
+            this.setState({ days: data })
         })
         .catch(console.error);
     }
@@ -35,15 +29,20 @@ class Schedule extends Component {
                 </div>
             )
         });
+        const first = days.slice(0,4);
+        const second = days.slice(4, 7);
 
         return (
-            <div>
+            <div style={{paddingTop:'40px'}}>
                 <div>
                     <h2 className="schedule-link">Food Schdeule</h2>
                 </div>
                 <div className="container">
                     <div class="row">
-                        {days}
+                        {first}
+                    </div>
+                    <div class="row">
+                        {second}
                     </div>
                 </div>    
             </div>    
