@@ -49,7 +49,7 @@ class App extends Component {
               </div>
             </div> 
           :
-          <Schedule food={this.state.food}/>
+          <Schedule zip={this.state.zip}/>
         }
       </div>
     );
