@@ -7,7 +7,9 @@ router.route('/schedule')
   .post(controller.schedule);
 
 router.route('/source')
-  .post(controller.addSource);
+  .get(controller.getAllSources)
+  .post(controller.addSource)
+  .delete(controller.deleteAllSources);
 
 router.route('/zipcode')
   .delete(controller.deleteAllZipcodes);

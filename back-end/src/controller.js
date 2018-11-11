@@ -7,7 +7,9 @@ const moment = require('moment');
 const controller = {
   schedule,
   addSource,
-  deleteAllZipcodes
+  deleteAllZipcodes,
+  deleteAllSources,
+  getAllSources
 };
 
 function calculateZipcode(zipcode) {
@@ -143,6 +145,7 @@ function addSource(req, res) {
   const pass = password === process.env.MONGODB_PASS;
 
   if (user && pass) {
+    console.log(source);
     Source.create(source)
       .then(() => res.sendStatus(200))
       .catch(err => {
@@ -156,6 +159,18 @@ function addSource(req, res) {
 
 function deleteAllZipcodes(req, res) {
   Zipcode.deleteMany({})
+    .then(data => res.status(200).send(data))
+    .catch(err => res.status(500).send(err));
+}
+
+function deleteAllSources(req, res) {
+  Source.deleteMany({})
+    .then(data => res.status(200).send(data))
+    .catch(err => res.status(500).send(err));
+}
+
+function getAllSources(req, res) {
+  Source.find({})
     .then(data => res.status(200).send(data))
     .catch(err => res.status(500).send(err));
 }
