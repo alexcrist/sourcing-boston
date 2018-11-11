@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Allston-Brighton APAC",
+    "address": "406 Cambridge Street, Allston, MA 02134",
+    "phone": "(617) 783-1485",
+    "availability": {
+      "mon": ["6:00am", "6:30am"],
+      "thurs": ["4:00pm", "5:00pm"]
+    },
+    "type": "FOOD PANTRIES",
+    "latitude": 42.35484,
+    "longitude": -71.13375
+  },
+  {
+    "name": "ABCD/Allston Brighton",
+    "address": "640 Washington Street, Brighton, MA 02135",
+    "phone": "(617) 783-1485",
+    "availability": {
+      "wed": ["12:00pm", "2:00pm"]
+    },
+    "type": "FOOD PANTRIES",
+    "latitude": 42.35069,
+    "longitude": -71.1692 
+  },
+    {
+    "name": "Codman Square Food Pantry",
+    "address": "378A Washington Street, Dorchester, MA 02124",
+    "phone": "(617) 783-1485",
+    "availability": {
+      "mon": ["4:00pm", "5:00pm"],
+      "fri": ["4:00pm", "5:00pm"]
+    },
+    "type": "FOOD PANTRIES",
+    "latitude": 42.29864,
+    "longitude": -71.07288
+  }
+]
