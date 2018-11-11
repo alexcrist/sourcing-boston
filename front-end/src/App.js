@@ -40,7 +40,7 @@ class App extends Component {
               </div>
             </div> 
           :
-          <Schedule/>
+          <Schedule zip={this.state.zip}/>
         }
       </div>
     );
