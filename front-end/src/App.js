@@ -32,10 +32,10 @@ class App extends Component {
               <div className="container home-container">
                 <div className="form-cont">
                   <div className="zip-form">
-                    <label className="zip-label" for="zipcode">Enter Your Zip Code</label>
-                    <input onChange={this.handleChange} type="text" placeholder="zipcode" class="form-control" id="zipcode"></input>
+                    <label className="zip-label" for="zipcode">Build a Food Schedule</label>
+                    <input onChange={this.handleChange} type="text" placeholder="zipcode" className="form-control form-control-lg" id="zipcode"></input>
                   </div>
-                  <button onClick={this.onSubmit} className="btn btn-primary zip-sub">Submit</button>
+                  <button onClick={this.onSubmit} className="btn btn-primary btn-lg zip-sub">Submit</button>
                 </div>
               </div>
             </div> 

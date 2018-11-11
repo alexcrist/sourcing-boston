@@ -1,7 +1,10 @@
 .zip-label {
     text-align: center;
-    font-size: 20px;
+    font-size: 50px;
     font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 6px #000000;
 }
 
 .zipcode {
@@ -24,7 +27,6 @@
 }
 
 .zip-sub {
-    height: calc(2.25rem + 2px);
     align-self: flex-end;
 }
 
