@@ -1,0 +1,660 @@
+[
+  {
+    "name": "Allston-Brighton APAC",
+    "address": "406 Cambridge St, Allston, MA 02134",
+    "phone": "(617) 783-1485",
+    "availability": "Mon - Fri, 10am - 2pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Codman Square Food Pantry",
+    "address": "378A Washington Street, Dorchester, MA 02124",
+    "phone": "(617) 825-9660",
+    "availability": "Tue 8:30 - 10:30am",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Dorchester House Health",
+    "address": "1353 Dorchester Ave, Dorchester, MA 02122",
+    "phone": "(617) 288-3230",
+    "availability": "Wed 8 - 10am",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Neponset Health Center",
+    "address": "398 Neponset Ave, Dorchester, MA 02122",
+    "phone": "(617) 282-3200",
+    "availability": "Tue 8 - 11am",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Holy Tabernacle Church",
+    "address": "70 Washington St, Dorchester MA 02121",
+    "phone": "(617) 427-8022",
+    "availability": "Fri 9am - 3:30pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Salvation Army/ Boston Kroc Center",
+    "address": "650 Dudley St, Dorchester, MA 02125",
+    "phone": "(617) 318-6936",
+    "availability": "Tue, Wed & Thu, 9:45am - 12pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Pilgrim Church",
+    "address": "540 Columbia Rd, Dorchester, MA 02125",
+    "phone": "(617) 282-0456",
+    "availability": "Wed 10am - 12pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "USCCB/Blessed Mother St.Teresa Parish of Calcutta",
+    "address": "800 Columbia Rd, Dorchester, MA 02125",
+    "phone": "(617) 436-2190",
+    "availability": "Thu 11am - 1pm, Sat 9 - 11am",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Saint Anthony Shrine - Franciscan Food Center",
+    "address": "100 Arch St, Boston, MA 02110",
+    "phone": "(617) 542-6440 ex 258",
+    "availability": "Thu 10am - 1pm, Sat 10am - 12pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "ABCD North End/ West End Pantry",
+    "address": "1 Michelangelo St, Boston, MA 02113",
+    "phone": "(617) 523-8125",
+    "availability": "Mon & Fri, 1 - 3:30pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "ABCD North End/ West End Neighborhood",
+    "address": "1 Michelangelo St, Boston, MA 02113",
+    "phone": "(617) 523-8125",
+    "availability": "Tue, Wed & Thu, 1 - 3:30pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "People’s Baptist Church",
+    "address": "134 Camden St, Boston, MA 02118",
+    "phone": "(617) 427-0424",
+    "availability": "3rd Wed, 9:30 - 11am",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Warwick House/ Saint Katherine Drexel",
+    "address": "175 Ruggles St, Roxbury Crossing, MA 02120",
+    "phone": "(617) 445-8915",
+    "availability": "Thu 8 - 9am",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Rosie’s Place",
+    "address": "889 Harrison Ave, Boston, MA 02118",
+    "phone": "(617) 318-0236",
+    "availability": "Tue - Fri, 9am - 12pm & 4:30 - 6pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Fair Foods at Yawkey Boys and Girls Club",
+    "address": "115 Warren St, Roxbury, MA 02119",
+    "phone": "(617) 427-6050",
+    "availability": "Tue 4:30 - 5:30pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Twelfth Baptist Church",
+    "address": "160 Warren St, Roxbury, MA 02119",
+    "phone": "(617) 442-7855",
+    "availability": "Tue 12:30 - 1:30pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "American Red Cross",
+    "address": "1033 Massachusetts Ave, Boston, MA 02118",
+    "phone": "(617) 375-0735",
+    "availability": "Wed & Sat, 9am - 12pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "ABCD Roxbury/North Dorchester Neighborhood Opportunity Center",
+    "address": "565 Warren St, Dorchester, MA 02121",
+    "phone": "(617) 442-5900",
+    "availability": "Mon - Thu, 10am - 1pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Saint Mary of the Angels",
+    "address": "377 Walnut Ave, Roxbury, MA 02119",
+    "phone": "(617) 833-1898",
+    "availability": "Wed 5 - 6:30pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Grace and Hope Mission",
+    "address": "1900 Columbus Ave, Roxbury, MA 02119",
+    "phone": "(617) 442-7579",
+    "availability": "Tue 11am - 12pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "ABCD/Parker Hill Fenway Neighborhood Service Center",
+    "address": "714 Parker St, Roxbury Crossing, MA 02120",
+    "phone": "(617) 445-6000",
+    "availability": "Mon, Thu & Fri, 9am - 12:30pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Boston Living Center",
+    "address": "29 Stanhope St, Boston, MA 02116",
+    "phone": "(617) 236-1012",
+    "availability": "Mon - Fri",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Friday Night Supper",
+    "address": "351 Boylston St, Boston, MA 02116",
+    "phone": "(617) 536-7050 ext 22",
+    "availability": "Fri 5 - 7pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Holy Redeemer Church/ Our Daily Bread Pantry",
+    "address": "56 Havre St, Boston, MA 02128",
+    "phone": "(617) 567-5926",
+    "availability": "Wed & Sun 3 - 4pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Grace Federated Church/ Emergency Food Cupboard",
+    "address": "760 Saratoga St, Boston, MA 02128",
+    "phone": "(617) 569-5358",
+    "availability": "Sat 10am - 12pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Hyde Park Food Pantry Hyde Park Municipal Building",
+    "address": "1179 River St, Hyde Park, MA 02136",
+    "phone": "(617) 637-7413",
+    "availability": "Tue & Thu, 9:30am - 12:30pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "ABCD/Jamaica Plain",
+    "address": "30 Bickford St, Jamaica Plain, MA 02130",
+    "phone": "(617) 522-4830",
+    "availability": "Tue, Wed & Thu, 10am - 1pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Saint Vincent De Paul/ Our Lady of Lourdes",
+    "address": "45 Brookside Ave, Jamaica Plain, MA 02130",
+    "phone": "(617) 524-0240",
+    "availability": "Mon 6 - 8pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Gladtidings",
+    "address": "573 Norfolk St, Mattapan, MA 02126",
+    "phone": "(617) 296-6784",
+    "availability": "Fri 10am - 12:30pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Healthy Baby, Healthy Child",
+    "address": "213 River St, Mattapan, MA 02126",
+    "phone": "(617) 534-2032",
+    "availability": "Mon, Wed & Fri, 10am - 2:45pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Greater Boston Nazarene Compassionate Center",
+    "address": "130 River St, Mattapan, MA 02126",
+    "phone": "(617) 296-7450",
+    "availability": "Wed & Fri, 8am - 1pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Boston Medical Center",
+    "address": "850 Harrison Avenue, Boston, MA 02118",
+    "phone": "(617) 414-3834",
+    "availability": "Mon - Fri, 10am - 4pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "CAB Health & Recovery Services",
+    "address": "784 Massachusetts Avenue Boston, MA 02118",
+    "phone": "(617) 226-3246",
+    "availability": "Mon - Sun, 6:30am - 6pm",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Haley House Soup Kitchen",
+    "address": "23 Dartmouth St, Boston, MA 02116",
+    "phone": "(617) 236-8132",
+    "availability": "Thu 10:30 - 11:30 am",
+    "category": "Food Pantry"
+  },
+  {
+    "name": "Allston-Brighton Congregational Church",
+    "address": "404 Washington St, Brighton, MA 02135",
+    "phone": "(617) 254-4046",
+    "availability": "Wed 6pm",
+    "category": "Meal Site"
+  },
+  {
+    "name": "East Boston Community Soup Kitchen",
+    "address": "28 Paris St, East Boston 02128",
+    "phone": "null",
+    "availability": "Tue 12 - 2pm & 4 - 7pm",
+    "category": "Meal Site"
+  },
+  {
+    "name": "Saint Augustine’s - Saint Monica’s",
+    "address": "331 Old Colony Ave, South Boston, MA 02127",
+    "phone": "(617) 268-1230",
+    "availability": "Wed 12:30 - 1:30pm",
+    "category": "Meal Site"
+  },
+  {
+    "name": "GBCGAC Chinatown Hong Lok House",
+    "address": "25 Essex St, Boston, MA 02111",
+    "phone": "(617) 936-3966",
+    "availability": "Mon - Fri, 11am - 1pm",
+    "category": "Snap Application Assistance"
+  },
+  {
+    "name": "GBCGAC Chinatown Quincy Tower",
+    "address": "5 Oak St West, Boston, MA 02116",
+    "phone": "(617) 423-7560",
+    "availability": "Mon - Fri, 11am - 1pm",
+    "category": "Snap Application Assistance"
+  },
+  {
+    "name": "Ethos Brighton Veronica B. Smith Senior Center",
+    "address": "20 Chestnut Hill Ave, Boston, MA 02135",
+    "phone": "(617) 522-6700",
+    "availability": "Mon - Fri, 11:30am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Ethos Brighton Covenant House",
+    "address": "30 Washington St, Brighton, MA 02135",
+    "phone": "(617) 522-6700",
+    "availability": "Tue 5:15 - 6:15pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "GBCGAC Brighton House",
+    "address": "677 Cambridge St, Brighton, MA 02135",
+    "phone": "(617) 789-4289",
+    "availability": "Mon - Fri, 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Kit Clark Charlestown",
+    "address": "382 Main St, Charlestown, MA 02129",
+    "phone": "(617) 825-5000",
+    "availability": "Tue, Wed & Fri, 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Kit Clark Charlestown Ferrin",
+    "address": "100 Ferrin St, Charlestown, MA 02129",
+    "phone": "(617) 825-5000",
+    "availability": "Mon - Fri, 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Blake Estates",
+    "address": "1344 Hyde Park Ave, Hyde Park, MA 02136",
+    "phone": "(617) 522-6700",
+    "availability": "Tue & Thu 11:30 am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Kit Clark at Roxbury Alianza",
+    "address": "63 Parker Hill Ave, Boston, MA 02120",
+    "phone": "(617) 825-5000",
+    "availability": "Mon - Fri, 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Kit Clark at Roxbury",
+    "address": "25 Ruggles St, Roxbury, MA 02119",
+    "phone": "(617) 825-5000",
+    "availability": "Mon - Fri, 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Kit Clark People’s Baptist Church",
+    "address": "134 Camden St, Boston, MA 02118",
+    "phone": "(617) 825-5000",
+    "availability": "Thu 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Kit Clark Roxbury at St Patrick’s",
+    "address": "400 Dudley St, Boston, MA 02119",
+    "phone": "(617) 825-5000",
+    "availability": "Tue 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Kit Clark at Roxbury",
+    "address": "237 Walnut Ave, Roxbury, MA 02119",
+    "phone": "(617) 825-5000",
+    "availability": "Fri 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Kit Clark at Curley",
+    "address": "1663 Columbia Rd, Boston, MA 02127",
+    "phone": "(617) 825-5000",
+    "availability": "Mon - Fri, 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Kit Clark at Neighborhood House",
+    "address": "136 H St, Boston, MA 02127",
+    "phone": "(617) 825-5000",
+    "availability": "Mon, Wed & Fri, 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Anna Bissonette",
+    "address": "1640 Washington St, Boston, MA 02118",
+    "phone": "(617) 825-5000",
+    "availability": "Mon, Tue, Thu & Fri 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "South End Unity",
+    "address": "80 W Dedham St, Boston, MA 02118",
+    "phone": "(617) 825-5000",
+    "availability": "Mon - Fri, 11:30 - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Kit Clark at South End Cardinal Medeiros Center",
+    "address": "25 Isabella St, Boston, MA 02116",
+    "phone": "(617) 825-5000",
+    "availability": "Mon - Fri, 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Ethos Back Bay at Emmanuel Church [LGBT]",
+    "address": "15 Newbury St, Boston, MA 02116",
+    "phone": "(617) 522-6700",
+    "availability": "Thu 11:30am - 2pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Kit Clark at Morville",
+    "address": "100 Norway St, Boston, MA 02115",
+    "phone": "(617) 825-5000",
+    "availability": "Mon - Fri, 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Kit Clark Dorchester Codman Apt.",
+    "address": "784 Washington St, Boston, MA 02124",
+    "phone": "(617) 825-5000",
+    "availability": "Mon - Fri, 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Kit Clark Center",
+    "address": "42 Charles St, Dorchester, MA 02122",
+    "phone": "(617) 825-5000",
+    "availability": "Mon - Fri, 11:30am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Kit Clark Dorchester Peabody Building,",
+    "address": "1875 Dorchester Ave, Boston, MA 02124",
+    "phone": "(617) 825-5000",
+    "availability": "Mon - Fri, 11am - 12pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Kit Clark Dorchester Keystone Apt.",
+    "address": "151 Hallet St, Dorchester Center, Boston, MA 02124",
+    "phone": "(617) 825-5000",
+    "availability": "Mon, Thu & Fri 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Dorchester House Health",
+    "address": "1353 Dorchester Ave, Dorchester, MA 02122",
+    "phone": "(617) 288-3230",
+    "availability": "Tue 8:30 - 10:30am",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Kit Clark Arch",
+    "address": "100 Arch St, Boston, MA 02110",
+    "phone": "(617) 825-5000",
+    "availability": "Wed 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "East Boston Social Center",
+    "address": "68 Central Sq, East Boston, MA 02128",
+    "phone": "(617) 825-5000",
+    "availability": "Mon - Fri, 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "East Boston Heritage Apt.",
+    "address": "209 Summer St, Boston, MA 02128",
+    "phone": "(617) 825-5000",
+    "availability": "Mon - Fri, 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Ethos Jamaica Plain at Back of the Hill",
+    "address": "100 South Huntington Ave, Jamaica Plain, MA 02130",
+    "phone": "(617) 522-6700",
+    "availability": "Mon - Fri, 11:30am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Ethos Jamaica Plain at Julia Martin House",
+    "address": "90 Bickford St, Boston, MA 02130",
+    "phone": "(617) 522-6700",
+    "availability": "Wed 11:30am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Ethos Jamaica Plain at Amory St",
+    "address": "125 Amory St, Boston, MA 02119",
+    "phone": "(617) 522-6700",
+    "availability": "Mon - Fri, 11:45am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Ethos Jamaica Plain at Nate Smith House",
+    "address": "155 Lamartine St, Boston, MA 02130",
+    "phone": "(617) 522-6700",
+    "availability": "Wed & Fri, 11:15am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Ethos Jamaica Plain at CrossRoads Café",
+    "address": "633 Centre St, Boston, MA 02130",
+    "phone": "(617) 522-6700",
+    "availability": "Sat 12:45 - 2pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Ethos Jamaica Plain, Farnsworth",
+    "address": "90 South St, Jamaica Plain, MA 02130",
+    "phone": "(617) 522-6700",
+    "availability": "Mon - Fri, 11:15am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Ethos Jamaica Plain at Woodbourne",
+    "address": "6 Southbourne Rd, Jamaica Plain, MA 02130",
+    "phone": "(617) 522-6700",
+    "availability": "Mon - Fri, 11:30 - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Church of the Holy Spirit",
+    "address": "525 River St, Boston, MA 02126",
+    "phone": "(617) 522-6700",
+    "availability": "Mon - Fri, 11:30 - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Kit Clark at Beacon",
+    "address": "19 Myrtle St, Boston, MA 02114",
+    "phone": "null",
+    "availability": "Mon - Fri, 11am - 1pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Ethos West Roxbury at Roche Center",
+    "address": "1716 Centre St, West Roxbury, MA 02132",
+    "phone": "null",
+    "availability": "Fri 11:30am - 2pm",
+    "category": "Senior Dining Assistance"
+  },
+  {
+    "name": "Fair Foods at St. Botolph House",
+    "address": "70 St Botolph St, Boston, MA 02116",
+    "phone": "null",
+    "availability": "Thu 1 - 2pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  },
+  {
+    "name": "Fresh Truck BHA & Newtown",
+    "address": "150 Medford St. Charlestown, MA 02129",
+    "phone": "null",
+    "availability": "Mon 12 - 2pm, Thu 3 - 6pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  },
+  {
+    "name": "Fairs Foods at The Kennedy Center",
+    "address": "55 Bunker Hill St, Charlestown, MA 02129",
+    "phone": "null",
+    "availability": "Thu 2 - 3:30pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  },
+  {
+    "name": "Fresh Truck at Franklin Field BHA",
+    "address": "100 Ames St, Boston, MA 02124",
+    "phone": "(617) 297-7685",
+    "availability": "Wed 3 - 6pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  },
+  {
+    "name": "Bowdoin Street Health Center",
+    "address": "230 Bowdoin St, Dorchester, MA 02125",
+    "phone": "null",
+    "availability": "Tue 12 - 3pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  },
+  {
+    "name": "Fair Foods at Franklin Field Senior Center",
+    "address": "100 Ames St, Boston, MA 02124",
+    "phone": "(617) 288-6185",
+    "availability": "Thu 4:30 - 5:30pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  },
+  {
+    "name": "Fair Foods at Codman Sq. Library",
+    "address": "690 Washington St, Boston, MA 02124",
+    "phone": "null",
+    "availability": "Sat 1:30 - 4:30pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  },
+  {
+    "name": "Fair Foods at First Parish Church Meetinghouse Hill",
+    "address": "10 Parish St, Dorchester, MA 02122",
+    "phone": "null",
+    "availability": "Fri 3:30 - 5pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  },
+  {
+    "name": "Fair Foods at Lena Park Community Center",
+    "address": "150 American Legion Hwy, Boston, MA 02124",
+    "phone": "null",
+    "availability": "Tue 4:30 - 5:30pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  },
+  {
+    "name": "Fair Foods at Bethel Hispanic 7th Day Church",
+    "address": "1 Dix St, Boston, MA 02122",
+    "phone": "null",
+    "availability": "Thu 3 - 4pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  },
+  {
+    "name": "Fair Foods at Yawkey Boys & Girls Club",
+    "address": "115 Warren St, Roxbury, MA 02119",
+    "phone": "(617) 288-6185",
+    "availability": "Tue 4:30 - 5:30pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  },
+  {
+    "name": "Fair Foods at Salvation Army",
+    "address": "23 Vernon St, Roxbury, MA 02119",
+    "phone": "(617) 288-6185",
+    "availability": "Tue 2:30 - 3:30pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  },
+  {
+    "name": "Fair Foods at First Church of Roxbury",
+    "address": "10 Putnam St, Boston, MA 02119",
+    "phone": "(617) 288-6185",
+    "availability": "Sat 11am - 2pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  },
+  {
+    "name": "Fair Foods at Whittier Street Apt.",
+    "address": "180 Ruggles St, Boston, MA 02120",
+    "phone": "(617) 288-6185",
+    "availability": "Thu 4 - 5pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  },
+  {
+    "name": "Fair Foods at Tobin Community Center",
+    "address": "1481 Tremont St, Boston, MA 02120",
+    "phone": "(617) 288-6185",
+    "availability": "Wed 4:30 - 5:30pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  },
+  {
+    "name": "Fair Foods at Walnut Park Apt.",
+    "address": "1990 Columbus Ave, Roxbury, MA 02119",
+    "phone": "(617) 288-6185",
+    "availability": "Sat 11am - 1pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  },
+  {
+    "name": "Fair Foods at West Broadway Task Force",
+    "address": "115 Orton Marotta Way, Boston, MA 02127",
+    "phone": "(617) 288-6185",
+    "availability": "Tue 1:30 - 2:30pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  },
+  {
+    "name": "Fair Foods at McCormack Task Force",
+    "address": "345 Old Colony Ave, Boston, MA 02127",
+    "phone": "(617) 288-6185",
+    "availability": "Fri 2:30 - 3:30pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  },
+  {
+    "name": "Fair Foods at Villa Victoria Plaza Betances",
+    "address": "100 W Dedham St, Boston, MA 02118",
+    "phone": "(617) 288-6185",
+    "availability": "Tue 2 - 3pm",
+    "category": "Affordable Fruit & Vegetable Sources"
+  }
+]
