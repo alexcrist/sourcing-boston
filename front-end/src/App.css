@@ -20,12 +20,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - 56px);
 }
 
 .form-cont {
     display:flex;
     max-width: 95%;
+    padding-bottom: 50px;
 }
 
 .home-container .zipform {
