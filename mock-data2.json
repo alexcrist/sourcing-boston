@@ -8,8 +8,8 @@
       "thurs": ["4:00pm", "5:00pm"]
     },
     "type": "FOOD PANTRIES",
-    "latitude":
-    "longitude": 
+    "latitude": 42.35484,
+    "longitude": -71.13375
   },
   {
     "name": "ABCD/Allston Brighton",
@@ -18,7 +18,9 @@
     "availability": {
       "wed": ["12:00pm", "2:00pm"]
     },
-    "type": "FOOD PANTRIES"
+    "type": "FOOD PANTRIES",
+    "latitude": 42.35069,
+    "longitude": -71.1692 
   },
     {
     "name": "Codman Square Food Pantry",
@@ -28,6 +30,8 @@
       "mon": ["4:00pm", "5:00pm"],
       "fri": ["4:00pm", "5:00pm"]
     },
-    "type": "FOOD PANTRIES"
+    "type": "FOOD PANTRIES",
+    "latitude": 42.29864,
+    "longitude": -71.07288
   }
 ]
