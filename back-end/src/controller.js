@@ -73,12 +73,17 @@ function groupIntoDays(dbZipcode) {
   return days;
 }
 
+function convert(source) {
+  return moment(source, 'HH:mmA').diff(moment().startOf('day'), 'seconds');
+}
+
 function overlap(day, source1, source2) {
-  const start1 = source1.source.availability[day][0];
-  const end1 = source1.source.availability[day][1];
-  const start2 = source2.source.availability[day][0];
-  const end2 = source2.source.availability[day][1];
-  return end1 > start2 || end2 > start1;
+  const start1 = convert(source1.source.availability[day][0]);
+  const end1 = convert(source1.source.availability[day][1]);
+  const start2 = convert(source2.source.availability[day][0]);
+  const end2 = convert(source2.source.availability[day][1]);
+  console.log(start1, end1, start2, end2);
+  return (end1 > start2 && start1 < end2) || (end2 > start1 && start2 < end1);
 }
 
 function filterSources(day, sources) {
@@ -93,8 +98,11 @@ function filterSources(day, sources) {
       const source1 = sources[i];
       const source2 = sources[j];
       if (overlap(day, source1, source2)) {
+        console.log('overlap!');
+        console.log(day);
+        console.log(source2);
         let index = source1.distance < source2.distance ? j : i;
-        _.remove(sources, index)
+        sources.splice(index, 1);
         return filterSources(sources);
       }
     }
@@ -112,7 +120,27 @@ function filterOverlaps(days) {
       sources: filteredSources
     });
   });
+  console.log('filtered', filteredDays);
   return filteredDays;
+}
+
+function threeClosestPerDay(day, date, sources) {
+  const sorted = _.sortBy(sources, ({ distance, source }) => {
+    return distance;
+  });
+  const index = sorted.length > 3 ? 3 : sorted.length;
+  return sorted.splice(0, index);
+}
+
+function threeClosest(days) {
+  let finalDays = [];
+  days.forEach(({ day, date, sources }) => {
+    const newSources = threeClosestPerDay(day, date, sources);
+    finalDays.push({
+      day, date, sources: newSources
+    });
+  });
+  return finalDays;
 }
 
 function filterExtra(days) {
@@ -154,8 +182,9 @@ function schedule(req, res) {
       });
     })
     .then(groupIntoDays)
-    .then(filterOverlaps)
-    .then(filterExtra)
+    .then(threeClosest)
+    // .then(filterOverlaps)
+    // .then(filterExtra)
     .then(data => {
       res.status(200).send(data)
     })
