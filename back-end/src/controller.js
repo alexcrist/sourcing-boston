@@ -82,11 +82,16 @@ function overlap(day, source1, source2) {
 }
 
 function filterSources(day, sources) {
+  console.log('filter sources');
+  console.log(!sources);
   if (!sources) {
     return sources;
   }
-  for (let i = 0; i < sources.ss; i++) {
+  for (let i = 0; i < sources.length; i++) {
     for (let j = i + 1; j < sources.length; j++) {
+      if (i == j) {
+        continue;
+      }
       const source1 = sources[i];
       const source2 = sources[j];
       if (overlap(day, source1, source2)) {
@@ -154,7 +159,6 @@ function schedule(req, res) {
     .then(filterOverlaps)
     .then(filterExtra)
     .then(data => {
-      console.log(data);
       res.status(200).send(data)
     })
     .catch(err => {
