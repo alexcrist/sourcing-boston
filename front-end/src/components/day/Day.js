@@ -4,8 +4,6 @@ class Day extends Component {
 
     constructor(props) {
         super(props);
-        console.log('i am a day');
-        console.log(this.props.day);
     }
 
     render() {

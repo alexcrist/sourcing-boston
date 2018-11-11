@@ -1,4 +1,4 @@
-var data = require('./shithole.json');
+var data = require('./goodgood.json');
 var request = require('request');
 
 data.forEach((entry, index) => {
